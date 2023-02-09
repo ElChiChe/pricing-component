@@ -124,6 +124,11 @@
 		color: hsl(240, 78%, 98%);
 	}
 
+	.cards-container .professional-card .btn-more {
+		background: hsl(240, 78%, 98%);
+		color: hsl(232, 13%, 33%);
+	}
+
 	.cards {
 		display: flex;
 		justify-content: space-evenly;

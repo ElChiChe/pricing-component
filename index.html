@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,37 +17,98 @@
 </head>
 <body>
 
-  Our Pricing
-  Annually
-  Monthly
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+<main class="main-container">
+ 
+<img class="bg-img-bottom" src="images/bg-bottom.svg" alt="">
+<img class="bg-img-top" src="images/bg-top.svg" alt="">
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+ <div class="div-change">
+   
+    <h2>Our Pricing</h2>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
+    <div class="div-toggle">
+      
+      <p>Annually</p>
+      <div class="btn-toggle">
+        <div></div>
+      </div>
+      <p>Monthly</p>
+    
+    </div>
+ </div> 
+
+  <div class="cards-container">
+    <div class="cards">
+      
+      <div class="price-div">
+
+        <p class="text-pack">Basic</p>
+        <span><span class="dollar">$</span>19.99</span>
+      
+      </div>
+
+      <span class="year-span">199.99</span>
+      <hr>
+      <p>500 GB Storage</p>
+      <hr>
+      <p>2 Users Allowed</p>
+      <hr>
+      <p>Send up to 3 GB</p>
+      <hr>
+      <button class="btn-more">Learn More</button>
+    
+    </div>
+
+    <div class="cards professional-card">
+      
+      
+      <div class="price-div">
+        
+        <p class="text-pack">Professional</p>
+        <span>$24.99</span>
+      
+      </div>
+      <span class="year-span">249.99</span>
+      <hr>
+      <p>1 TB Storage</p>
+      <hr>
+      <p>5 Users Allowed</p>
+      <hr>
+      <p>Send up to 10 GB</p>
+      <hr>
+      <button class="btn-more">Learn More</button>
+    
+    </div>
+
+    <div class="cards">
+      
+      <div class="price-div">
+        
+        <p class="text-pack">Master</p>
+        <span>$39.99</span>
+      
+      </div>
+      <span class="year-span">399.99</span>
+      <hr>
+      <p>2 TB Storage</p>
+      <hr>
+      <p>10 Users Allowed</p>
+      <hr>
+      <p>Send up to 20 GB</p>
+      <hr>
+      <button class="btn-more">Learn More</button>
+  
+    </div>
+  </div>
+</main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://frontendmentor.io/profile/elchiche">ElChiChe</a>.
   </div>
+
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

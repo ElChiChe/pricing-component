@@ -24,7 +24,9 @@
 	body {
 		width: 100%;
 		height: 100vh;
-		background: var(--bg-color);
+		background-image: url(images/bg-top.svg);
+		background-position: 16rem 0;
+		background-size: cover;
 	}
 
 	.bg-img-top {
@@ -88,7 +90,7 @@
 		align-items: center;
 		width: 45px;
 		height: 20px;
-		border-radius: 8px;
+		border-radius: 10px;
 	}
 
 	.btn-toggle > div {
@@ -192,6 +194,256 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
+	}
+}
+
+.div-toggle .btn-toggle {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 766px) and (max-width: 1440px) {
+	.div-toggle {
+		width: 70%;
+	}
+
+	.div-toggle .btn-toggle {
+		width: 60px;
+		height: 25px;
+	}
+
+	.div-toggle .btn-toggle > div {
+		height: 18px;
+		width: 20px;
+	}
+
+	.div-toggle > p {
+		font-size: 25px;
+	}
+
+	.div-change > h2 {
+		font-size: 45px;
+	}
+
+	.price-div .text-pack {
+		font-size: 30px;
+	}
+
+	.price-div > span {
+		font-size: 90px;
+	}
+
+	.price-div .dollar {
+		bottom: 12px;
+		right: 5px;
+	}
+
+	.cards {
+		width: 75%;
+	}
+
+	.cards > p {
+		font-size: 25px;
+	}
+
+	.btn-more {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.bg-img-top {
+		position: absolute;
+		width: 200px;
+		top: -10px;
+		right: -6rem;
+		z-index: -1;
+		display: none;
+	}
+
+	.bg-img-bottom {
+		position: absolute;
+		width: 300px;
+		display: none;
+	}
+
+	.main-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.div-change {
+		margin-top: 20px;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 60%;
+	}
+
+	.div-change > h2 {
+		color: var(--price-color);
+		font-weight: 700;
+	}
+
+	.div-toggle {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 90%;
+		height: 3rem;
+	}
+
+	.div-toggle > p {
+		color: var(--text-input-color);
+		font-weight: 700;
+		font-size: 15px;
+	}
+
+	.div-toggle .btn-toggle {
+		position: absolute;
+		background: linear-gradient(to right, var(--main-color-card));
+		display: flex;
+		justify-content: start;
+		padding: 2px;
+		align-items: center;
+		width: 45px;
+		height: 20px;
+		border-radius: 10px;
+	}
+
+	.btn-toggle > div {
+		position: absolute;
+		width: 15px;
+		height: 14px;
+		background: hsl(240, 78%, 98%);
+		border-radius: 8px;
+	}
+
+	.cards-container {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 100%;
+	}
+
+	.cards-container .professional-card {
+		background: linear-gradient(to right, var(--main-color-card));
+	}
+
+	.cards-container .professional-card .text-pack {
+		color: hsl(240, 78%, 98%);
+	}
+
+	.cards-container .professional-card .price-div > span {
+		color: hsl(240, 78%, 98%);
+	}
+
+	.cards-container .professional-card > p {
+		color: hsl(240, 78%, 98%);
+	}
+
+	.cards-container .professional-card .btn-more {
+		background: hsl(240, 78%, 98%);
+		color: hsl(232, 13%, 33%);
+	}
+
+	.cards {
+		position: relative;
+		top: 7%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		width: 28%;
+		height: 65%;
+		border-radius: 10px;
+		background: var(--bg-color);
+		box-shadow: 0 6px 10px 2px #0002;
+	}
+
+	.cards-container .professional-card {
+		top: 30px;
+		height: 72%;
+	}
+
+	.cards > p {
+		color: var(--price-color);
+		font-weight: 700;
+		font-size: 15px;
+	}
+
+	.price-div {
+		display: flex;
+		justify-content: space-evenly;
+		height: 30%;
+		align-items: center;
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.price-div .text-pack {
+		font-size: 20px;
+		color: var(--title-color);
+		font-weight: 700;
+	}
+
+	.price-div {
+		font-size: 70px;
+		font-weight: 700;
+		color: hsl(232, 13%, 17%);
+		text-align: center;
+	}
+
+	.price-div .dollar {
+		font-size: 50px;
+		position: relative;
+		bottom: 15px;
+	}
+
+	.cards > hr {
+		width: 80%;
+		background: var(--title-color);
+		opacity: 0.4;
+	}
+
+	.btn-more {
+		width: 80%;
+		height: 10%;
+		border-radius: 10px;
+		border: none;
+		background: linear-gradient(to right, var(--main-color-card));
+		color: white;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+
+	.div-toggle {
+		margin: 20px;
+		width: 50%;
+	}
+
+	.div-toggle > p {
+		font-size: 20px;
+	}
+
+	.div-toggle .btn-toggle {
+		padding: 5px;
+		width: 70px;
+		height: 40px;
+		border-radius: 20px;
+	}
+
+	.div-toggle .btn-toggle > div {
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
 	}
 }
 
